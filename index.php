@@ -43,7 +43,7 @@ include 'db.php';
         <?php foreach ($datas as $data) : ?>
         <div class="card">
 
-          <img width="150px" src=" <?= $data['poster'] ?> " alt="">
+          <img src=" <?= $data['poster'] ?> " alt="poster image">
           <h6 class="title"> <?= $data['title'] ?> </h6>
           <span class="author"> <?= $data['author'] ?> </span>
           <span class="year"> <?= $data['year'] ?> </span>

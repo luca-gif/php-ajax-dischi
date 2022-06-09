@@ -29,6 +29,12 @@ main .container .card {
     align-items: center;
 }
 
-.card img {
-    width: 150px;
+main img {
+    width: 160px;
+    height: 160px;
+    padding: 20px;
+}
+
+.card h6 {
+    margin: 10px;
 }
