@@ -1,9 +1,15 @@
 const root = new Vue({
     el: "#root",
-    data: {},
+    data: {
+        apiUrl: "http://localhost/primo-php/php-ajax-dischi/api.php",
+        datas: [],
+    },
     methods: {
         getApi() {
-            console.log("api");
+            axios.get(this.apiUrl).then((r) => {
+                this.datas = r.data;
+                console.log(this.datas);
+            });
         },
     },
     mounted() {
